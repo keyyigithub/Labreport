@@ -17,16 +17,6 @@
   }
 }
 
-%简化图像的处理，需要按顺序传入caption, location, label（可选）
-%如果label被忽略，则默认为fig_出现序号，否则为fig_给定文字（只接受英文）
-\newcommand{\fig}[3][\arabic{figure}]{
-  \begin{figure}
-    \centering
-    \caption{#2\label{fig_#1}}
-    \includegraphics*[scale=1.0, width=\textwidth]{figures/#3}
-  \end{figure}
-}
-
 \pagestyle{plain}
 
 \title{Labreport}
@@ -36,7 +26,7 @@
 \maketitle
 
 \begin{abstract}
-  Something...
+	Something...
 \end{abstract}
 
 \section{实验原理}
